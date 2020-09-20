@@ -11,13 +11,24 @@ buildGoModule rec {
     sha256 = "1cx39xipvvhb12nhvg7kfssnqafajni662b070ynlw8p870bj0sn";
   };
 
-  vendorSha256 = "1scggvs88c80iwqalm3wrhq8vi58m7hj7ckb0c4rdppqbx4mad48";
+  buildFlagsArray = ''
+    -ldflags=
+      -s -w
+      -X github.com/derailed/popeye/cmd.version=${version}
+      -X github.com/derailed/popeye/cmd.commit=${src.rev}
+  '';
+
+  vendorSha256 = "0b2bawc9wnqwgvrv614rq5y4ns9di65zqcbb199y2ijpsaw5d9a7";
+
+  doCheck = false;
 
   meta = with stdenv.lib; {
     description =
       "A Kubernetes cluster resource sanitizer";
     homepage = "https://github.com/derailed/popeye";
+    changelog = "https://github.com/derailed/popeye/releases/tag/v${version}";
     license = licenses.asl20;
     maintainers = [ maintainers.bryanasdev000 ];
+    platforms = platforms.linux;
   };
 }

@@ -4,4 +4,10 @@ Overlay para desenvolvimento de pacotes para o Nix\NixOS.
 ## Pacotes
 
 - Velero (update do heptio-ark)
-- Popeye (ainda em testes)
+- Popeye (mantenedor)
+
+## TODO
+
+- Abrir a PR no Nixpkgs para o Velero e o Popeye
+- Nix tests
+- Golang tests

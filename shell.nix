@@ -4,6 +4,6 @@ with pkgs;
 pkgs.mkShell {
   buildInputs = [
     bryanasdev000.velero
-    bash-completion
+    bryanasdev000.popeye
   ];
 }
