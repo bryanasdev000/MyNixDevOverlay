@@ -15,7 +15,9 @@ buildGoModule rec {
     -ldflags=
       -s -w
       -X github.com/derailed/popeye/cmd.version=${version}
-      -X github.com/derailed/popeye/cmd.commit=${src.rev}
+      -X github.com/derailed/popeye/cmd.commit=b7a876eafd4f7ec5683808d8d6880c41c805056a
+      -X github.com/derailed/popeye/cmd.date=2020-08-25T23:02:30Z
+      
   '';
 
   vendorSha256 = "0b2bawc9wnqwgvrv614rq5y4ns9di65zqcbb199y2ijpsaw5d9a7";
