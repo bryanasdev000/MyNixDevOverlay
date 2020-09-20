@@ -11,3 +11,4 @@ Overlay para desenvolvimento de pacotes para o Nix\NixOS.
 - Abrir a PR no Nixpkgs para o Velero e o Popeye
 - Nix tests
 - Golang tests
+- Notificacoes para novas releases
