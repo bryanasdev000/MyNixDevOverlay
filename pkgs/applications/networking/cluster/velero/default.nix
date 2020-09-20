@@ -21,6 +21,8 @@ buildGoModule rec {
 
   vendorSha256 = "1izl7z689jf3i3wax7rfpk0jjly7nsi7vzasy1j9v5cwjy2d5z4v";
 
+  excludedPackages = [ "issue-template-gen" ];
+
   doCheck = false;
 
   nativeBuildInputs = [ installShellFiles ];
@@ -37,7 +39,7 @@ buildGoModule rec {
     changelog =
       "https://github.com/vmware-tanzu/velero/releases/tag/v${version}";
     license = licenses.asl20;
-    maintainers = [ maintainers.mbode ];
+    maintainers = [ maintainers.mbode maintainers.bryanasdev000 ];
     platforms = platforms.linux;
   };
 }
