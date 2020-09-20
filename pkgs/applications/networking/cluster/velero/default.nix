@@ -34,7 +34,8 @@ buildGoModule rec {
     description =
       "A utility for managing disaster recovery, specifically for your Kubernetes cluster resources and persistent volumes";
     homepage = "https://velero.io/";
-    changelog = "https://github.com/vmware-tanzu/velero/releases/tag/v${version}";
+    changelog =
+      "https://github.com/vmware-tanzu/velero/releases/tag/v${version}";
     license = licenses.asl20;
     maintainers = [ maintainers.mbode ];
     platforms = platforms.linux;

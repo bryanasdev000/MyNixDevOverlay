@@ -25,8 +25,7 @@ buildGoModule rec {
   doCheck = false;
 
   meta = with stdenv.lib; {
-    description =
-      "A Kubernetes cluster resource sanitizer";
+    description = "A Kubernetes cluster resource sanitizer";
     homepage = "https://github.com/derailed/popeye";
     changelog = "https://github.com/derailed/popeye/releases/tag/v${version}";
     license = licenses.asl20;
