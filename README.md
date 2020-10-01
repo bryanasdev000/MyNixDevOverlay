@@ -1,14 +1,27 @@
 # MyNixDevOverlay
-Overlay para desenvolvimento de pacotes para o Nix\NixOS.
+
+Overlay para desenvolvimento de pacotes para o Nix e NixOS.
 
 ## Pacotes
 
-- Velero (update do heptio-ark)
-- Popeye (mantenedor)
+### No nixpkgs
+
+- velero (update do antigo heptio-ark)
+- popeye (inclusao)
+
+### Nesse overlay
+
+- kube-capacity
+- kubectl-example
+
+### TODO
+
+- TODO
 
 ## TODO
 
-- Abrir a PR no Nixpkgs para o Velero e o Popeye
+- Multi Arch/OS
+- Backport?
 - Nix tests
 - Golang tests
-- Notificacoes para novas releases
+- Notificacoes para novas releases (por enquanto somente via Github)
