@@ -4,24 +4,30 @@ Overlay para desenvolvimento de pacotes para o Nix e NixOS.
 
 ## Pacotes
 
-### No nixpkgs
+### No Nixpkgs
 
 - velero (update do antigo heptio-ark)
 - popeye (inclusao)
 
-### Nesse overlay
+### Pronto
 
-- kube-capacity
-- kubectl-example
+- kube-capacity (PR aberta)
+- kubectl-example (PR aberta)
 
-### TODO
+### Empacotando...
 
-- TODO
+- Jmeter (sem mantenedor)
+- OCS Inventory Agent
 
 ## TODO
 
-- Multi Arch/OS
-- Backport?
+- Add nix install no Github dos pacotes que mantenho
+- Multi Arch/OS (Darwin & ARM)
+- Backport? (Para as branchs anteriores ao Nix Unstable)
 - Nix tests
-- Golang tests
+- Golang tests (Rodar determinados testes somente)
 - Notificacoes para novas releases (por enquanto somente via Github)
+
+## Bugs
+
+- Checar velero shell completion (collision between `velero-1.5.1/share/bash-completion/completions/helm.bash` and `helm-3.3.1/share/bash-completion/completions/helm.bash` and collision between `velero-1.5.1/share/zsh/site-functions/_helm` and `helm-3.3.1/share/zsh/site-functions/_helm`)
