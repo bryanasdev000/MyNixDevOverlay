@@ -6,19 +6,25 @@ Overlay para desenvolvimento de pacotes para o Nix e NixOS.
 
 ### No Nixpkgs
 
-- velero (update do antigo heptio-ark)
-- popeye (inclusao)
+- velero 
+- popeye 
 
 ### Pronto
 
 - kube-capacity (PR aberta)
 - kubectl-example (PR aberta)
+- gojsontoyaml (PR aberta)
 
 ### Empacotando...
 
+- jsonnet-bundler
+- kube-linter
+
+### TODO
+
 - Jmeter (sem mantenedor)
 - OCS Inventory Agent
-
+- rtop
 ## TODO
 
 - Add nix install no Github dos pacotes que mantenho
