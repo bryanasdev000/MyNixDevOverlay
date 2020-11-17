@@ -1,14 +1,17 @@
-self: super:
-let callPackage = super.lib.callPackageWith super;
-in {
+self: super: {
   bryanasdev000 = {
-    velero = callPackage ./pkgs/applications/networking/cluster/velero { };
-    popeye = callPackage ./pkgs/applications/networking/cluster/popeye { };
+    velero =
+      super.callPackage ./pkgs/applications/networking/cluster/velero { };
+    popeye =
+      super.callPackage ./pkgs/applications/networking/cluster/popeye { };
     kube-capacity =
-      callPackage ./pkgs/applications/networking/cluster/kube-capacity { };
+      super.callPackage ./pkgs/applications/networking/cluster/kube-capacity
+      { };
     kubectl-example =
-      callPackage ./pkgs/applications/networking/cluster/kubectl-example { };
-    #kubepug = callPackage ./pkgs/applications/networking/cluster/kubepug { };
-    #octant = callPackage ./pkgs/applications/networking/cluster/octant { };
+      super.callPackage ./pkgs/applications/networking/cluster/kubectl-example
+      { };
+    gojsontoyaml = super.callPackage ./pkgs/development/tools/gojsontoyaml { };
+    jsonnet-bundler =
+      super.callPackage ./pkgs/development/tools/jsonnet-bundler { };
   };
 }
