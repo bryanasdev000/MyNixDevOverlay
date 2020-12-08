@@ -25,6 +25,11 @@ Overlay para desenvolvimento de pacotes para o Nix e NixOS.
 - Jmeter (sem mantenedor)
 - OCS Inventory Agent
 - rtop
+- kubepug
+- kubectl-who-can
+- rakkess
+- pgbadger
+
 ## TODO
 
 - Add nix install no Github dos pacotes que mantenho

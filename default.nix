@@ -13,5 +13,6 @@ self: super: {
     gojsontoyaml = super.callPackage ./pkgs/development/tools/gojsontoyaml { };
     jsonnet-bundler =
       super.callPackage ./pkgs/development/tools/jsonnet-bundler { };
+    jmeter = super.callPackage ./pkgs/applications/networking/jmeter/default.nix { };
   };
 }
